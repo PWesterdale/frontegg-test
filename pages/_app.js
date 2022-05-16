@@ -7,7 +7,7 @@ const contextOptions = {
 
 function MyApp({Component, pageProps, router}) {
     return <>
-        <FronteggProvider router={router} contextOptions={contextOptions} customLoader={true}>
+        <FronteggProvider router={router} contextOptions={contextOptions} hostedLoginBox={true} customLoader={true}>
             <Component {...pageProps}/>
         </FronteggProvider>
 
