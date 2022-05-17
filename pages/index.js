@@ -9,6 +9,7 @@ function Home() {
 
     return (
         <div className={styles.container}>
+            {user ? <span>{user.name}</span> : 'Not logged in'}
             <div onClick={()=>router.push('/my-account')}>Check protected route</div>
         </div>
     )
